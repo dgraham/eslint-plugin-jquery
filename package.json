@@ -1,0 +1,24 @@
+{
+  "name": "eslint-plugin-jquery",
+  "version": "0.0.1",
+  "description": "Disallow jQuery functions with native equivalents.",
+  "repository": "dgraham/eslint-plugin-jquery",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "David Graham",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*.js"
+  },
+  "peerDependencies": {
+    "eslint": ">=2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "mocha": "^2.4.5"
+  }
+}
