@@ -28,7 +28,8 @@ Add `jquery` to the plugins section of your `.eslintrc` configuration file. You 
     "jquery"
   ],
   "rules": {
-    "jquery/no-trim": 2
+    "jquery/no-trim": 2,
+    "jquery/no-val": 2
   }
 }
 ```
