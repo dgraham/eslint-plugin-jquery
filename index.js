@@ -7,6 +7,7 @@ module.exports = {
     'no-closest': require('./rules/no-closest'),
     'no-deferred': require('./rules/no-deferred'),
     'no-each': require('./rules/no-each'),
+    'no-inarray': require('./rules/no-inarray'),
     'no-map': require('./rules/no-map'),
     'no-parent': require('./rules/no-parent'),
     'no-parents': require('./rules/no-parents'),
