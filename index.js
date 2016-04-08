@@ -3,7 +3,7 @@
 module.exports = {
   rules: {
     'no-ajax': require('./rules/no-ajax'),
-    'no-ajax': require('./rules/no-class'),
+    'no-class': require('./rules/no-class'),
     'no-closest': require('./rules/no-closest'),
     'no-each': require('./rules/no-each'),
     'no-map': require('./rules/no-map'),
