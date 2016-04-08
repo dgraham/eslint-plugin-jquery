@@ -17,4 +17,12 @@ function traverse(node) {
   }
 }
 
-module.exports = {traverse: traverse}
+function isjQuery(node) {
+  const id = traverse(node)
+  return id && id.name.startsWith('$')
+}
+
+module.exports = {
+  traverse: traverse,
+  isjQuery: isjQuery
+}

@@ -10,8 +10,7 @@ module.exports = function(context) {
       if (node.callee.type !== 'MemberExpression') return
       if (forbidden.indexOf(node.callee.property.name) === -1) return
 
-      const id = utils.traverse(node)
-      if (id && id.name.startsWith('$')) {
+      if (utils.isjQuery(node)) {
         context.report({
           node: node,
           message: '$.' + node.callee.property.name + ' is not allowed'

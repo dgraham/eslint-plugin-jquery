@@ -8,8 +8,7 @@ module.exports = function(context) {
       if (node.callee.type !== 'MemberExpression') return
       if (node.callee.property.name !== 'trigger') return
 
-      const id = utils.traverse(node)
-      if (id && id.name.startsWith('$')) {
+      if (utils.isjQuery(node)) {
         context.report({
           node: node,
           message: '$.trigger is not allowed'
