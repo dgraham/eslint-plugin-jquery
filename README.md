@@ -28,10 +28,25 @@ Add `jquery` to the plugins section of your `.eslintrc` configuration file. You 
     "jquery"
   ],
   "rules": {
+    "jquery/no-ajax": 2,
+    "jquery/no-class": 2,
+    "jquery/no-closest": 2,
+    "jquery/no-data": 2,
+    "jquery/no-deferred": 2,
     "jquery/no-each": 2,
+    "jquery/no-find": 2,
+    "jquery/no-html": 2,
+    "jquery/no-inarray": 2,
     "jquery/no-map": 2,
+    "jquery/no-param": 2,
+    "jquery/no-parent": 2,
+    "jquery/no-parents": 2,
+    "jquery/no-serialize": 2,
+    "jquery/no-text": 2,
+    "jquery/no-trigger": 2,
     "jquery/no-trim": 2,
-    "jquery/no-val": 2
+    "jquery/no-val": 2,
+    "jquery/no-wrap": 2
   }
 }
 ```
