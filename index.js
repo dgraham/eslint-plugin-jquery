@@ -8,6 +8,7 @@ module.exports = {
     'no-data': require('./rules/no-data'),
     'no-deferred': require('./rules/no-deferred'),
     'no-each': require('./rules/no-each'),
+    'no-html': require('./rules/no-html'),
     'no-inarray': require('./rules/no-inarray'),
     'no-map': require('./rules/no-map'),
     'no-param': require('./rules/no-param'),
