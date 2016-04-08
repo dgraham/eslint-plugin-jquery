@@ -13,14 +13,17 @@ ruleTester.run('no-class', rule, {
     'addClass()',
     '[].addClass()',
     'div.addClass()',
+    'div.addClass',
 
     'removeClass()',
     '[].removeClass()',
     'div.removeClass()',
+    'div.removeClass',
 
     'toggleClass()',
     '[].toggleClass()',
     'div.toggleClass()',
+    'div.toggleClass'
   ],
   invalid: [
     {

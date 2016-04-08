@@ -10,6 +10,7 @@ ruleTester.run('no-trim', rule, {
   valid: [
     'trim()',
     '"test".trim()',
+    '"test".trim'
   ],
   invalid: [
     {

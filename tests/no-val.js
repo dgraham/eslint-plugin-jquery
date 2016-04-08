@@ -11,6 +11,7 @@ ruleTester.run('no-val', rule, {
     'val()',
     '[].val()',
     'div.val()',
+    'div.val'
   ],
   invalid: [
     {

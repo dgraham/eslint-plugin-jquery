@@ -11,6 +11,7 @@ ruleTester.run('no-map', rule, {
     'map()',
     '[].map()',
     'div.map()',
+    'div.map'
   ],
   invalid: [
     {

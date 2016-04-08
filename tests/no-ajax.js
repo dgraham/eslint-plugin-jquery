@@ -14,18 +14,23 @@ ruleTester.run('no-ajax', rule, {
   valid: [
     'ajax()',
     'div.ajax()',
+    'div.ajax',
 
     'get()',
     'div.get()',
+    'div.get',
 
     'getJSON()',
     'div.getJSON()',
+    'div.getJSON',
 
     'getScript()',
     'div.getScript()',
+    'div.getScript',
 
     'post()',
-    'div.post()'
+    'div.post()',
+    'div.post'
   ],
   invalid: [
     {

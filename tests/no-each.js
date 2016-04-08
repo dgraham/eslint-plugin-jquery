@@ -11,6 +11,7 @@ ruleTester.run('no-each', rule, {
     'each()',
     '[].each()',
     'div.each()',
+    'div.each'
   ],
   invalid: [
     {

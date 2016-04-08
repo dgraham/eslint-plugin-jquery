@@ -11,6 +11,7 @@ ruleTester.run('no-trigger', rule, {
     'trigger()',
     '[].trigger()',
     'div.trigger()',
+    'div.trigger'
   ],
   invalid: [
     {

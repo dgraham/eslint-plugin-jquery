@@ -11,6 +11,7 @@ ruleTester.run('no-parents', rule, {
     'parents()',
     '[].parents()',
     'div.parents()',
+    'div.parents'
   ],
   invalid: [
     {

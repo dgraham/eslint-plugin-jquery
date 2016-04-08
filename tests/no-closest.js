@@ -11,6 +11,7 @@ ruleTester.run('no-closest', rule, {
     'closest()',
     '[].closest()',
     'div.closest()',
+    'div.closest'
   ],
   invalid: [
     {
