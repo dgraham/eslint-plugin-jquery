@@ -10,6 +10,7 @@ module.exports = {
     'no-map': require('./rules/no-map'),
     'no-parent': require('./rules/no-parent'),
     'no-parents': require('./rules/no-parents'),
+    'no-text': require('./rules/no-text'),
     'no-trigger': require('./rules/no-trigger'),
     'no-trim': require('./rules/no-trim'),
     'no-val': require('./rules/no-val'),
