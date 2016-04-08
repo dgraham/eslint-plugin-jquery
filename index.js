@@ -5,6 +5,7 @@ module.exports = {
     'no-ajax': require('./rules/no-ajax'),
     'no-class': require('./rules/no-class'),
     'no-closest': require('./rules/no-closest'),
+    'no-data': require('./rules/no-data'),
     'no-deferred': require('./rules/no-deferred'),
     'no-each': require('./rules/no-each'),
     'no-inarray': require('./rules/no-inarray'),
