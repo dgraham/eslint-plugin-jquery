@@ -11,6 +11,7 @@ module.exports = {
     'no-parents': require('./rules/no-parents'),
     'no-trigger': require('./rules/no-trigger'),
     'no-trim': require('./rules/no-trim'),
-    'no-val': require('./rules/no-val')
+    'no-val': require('./rules/no-val'),
+    'no-wrap': require('./rules/no-wrap')
   }
 }
