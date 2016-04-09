@@ -9,6 +9,7 @@ module.exports = {
     'no-deferred': require('./rules/no-deferred'),
     'no-each': require('./rules/no-each'),
     'no-find': require('./rules/no-find'),
+    'no-global-eval': require('./rules/no-global-eval'),
     'no-html': require('./rules/no-html'),
     'no-inarray': require('./rules/no-inarray'),
     'no-map': require('./rules/no-map'),
