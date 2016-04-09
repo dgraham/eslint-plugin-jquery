@@ -30,6 +30,7 @@ Add `jquery` to the plugins section of your `.eslintrc` configuration file. You 
   "rules": {
     "jquery/no-ajax": 2,
     "jquery/no-class": 2,
+    "jquery/no-clone": 2,
     "jquery/no-closest": 2,
     "jquery/no-data": 2,
     "jquery/no-deferred": 2,
