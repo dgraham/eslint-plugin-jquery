@@ -1,12 +1,12 @@
 'use strict';
 
-const rule = require('../rules/no-inarray')
+const rule = require('../rules/no-in-array')
 const RuleTester = require('eslint').RuleTester
 
 const error = '$.inArray is not allowed'
 
 const ruleTester = new RuleTester()
-ruleTester.run('no-inarray', rule, {
+ruleTester.run('no-in-array', rule, {
   valid: [
     'inArray()',
     '"test".inArray()',
