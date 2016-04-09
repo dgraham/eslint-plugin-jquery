@@ -13,6 +13,7 @@ module.exports = {
     'no-global-eval': require('./rules/no-global-eval'),
     'no-html': require('./rules/no-html'),
     'no-in-array': require('./rules/no-in-array'),
+    'no-is': require('./rules/no-is'),
     'no-map': require('./rules/no-map'),
     'no-param': require('./rules/no-param'),
     'no-parent': require('./rules/no-parent'),
