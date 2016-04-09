@@ -8,6 +8,7 @@ module.exports = {
     'no-class': require('./rules/no-class'),
     'no-clone': require('./rules/no-clone'),
     'no-closest': require('./rules/no-closest'),
+    'no-css': require('./rules/no-css'),
     'no-data': require('./rules/no-data'),
     'no-deferred': require('./rules/no-deferred'),
     'no-delegate': require('./rules/no-delegate'),
