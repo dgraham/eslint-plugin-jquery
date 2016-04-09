@@ -3,6 +3,7 @@
 module.exports = {
   rules: {
     'no-ajax': require('./rules/no-ajax'),
+    'no-attr': require('./rules/no-attr'),
     'no-bind': require('./rules/no-bind'),
     'no-class': require('./rules/no-class'),
     'no-clone': require('./rules/no-clone'),
