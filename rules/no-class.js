@@ -3,7 +3,7 @@
 const utils = require('./utils.js')
 
 module.exports = function(context) {
-  const forbidden = ['addClass', 'removeClass', 'toggleClass']
+  const forbidden = ['addClass', 'hasClass', 'removeClass', 'toggleClass']
 
   return {
     CallExpression: function(node) {

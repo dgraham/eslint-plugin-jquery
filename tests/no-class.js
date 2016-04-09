@@ -4,6 +4,7 @@ const rule = require('../rules/no-class')
 const RuleTester = require('eslint').RuleTester
 
 const addError = '$.addClass is not allowed'
+const hasError = '$.hasClass is not allowed'
 const removeError = '$.removeClass is not allowed'
 const toggleError = '$.toggleClass is not allowed'
 
@@ -14,6 +15,11 @@ ruleTester.run('no-class', rule, {
     '[].addClass()',
     'div.addClass()',
     'div.addClass',
+
+    'hasClass()',
+    '[].hasClass()',
+    'div.hasClass()',
+    'div.hasClass',
 
     'removeClass()',
     '[].removeClass()',
@@ -41,6 +47,22 @@ ruleTester.run('no-class', rule, {
     {
       code: '$("div").append($("input").addClass())',
       errors: [{message: addError, type: 'CallExpression'}]
+    },
+    {
+      code: '$("div").hasClass()',
+      errors: [{message: hasError, type: 'CallExpression'}]
+    },
+    {
+      code: '$div.hasClass()',
+      errors: [{message: hasError, type: 'CallExpression'}]
+    },
+    {
+      code: '$("div").first().hasClass()',
+      errors: [{message: hasError, type: 'CallExpression'}]
+    },
+    {
+      code: '$("div").append($("input").hasClass())',
+      errors: [{message: hasError, type: 'CallExpression'}]
     },
     {
       code: '$("div").removeClass()',
