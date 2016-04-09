@@ -21,6 +21,7 @@ module.exports = {
     'no-param': require('./rules/no-param'),
     'no-parent': require('./rules/no-parent'),
     'no-parents': require('./rules/no-parents'),
+    'no-prop': require('./rules/no-prop'),
     'no-serialize': require('./rules/no-serialize'),
     'no-text': require('./rules/no-text'),
     'no-trigger': require('./rules/no-trigger'),
