@@ -8,6 +8,7 @@ module.exports = {
     'no-closest': require('./rules/no-closest'),
     'no-data': require('./rules/no-data'),
     'no-deferred': require('./rules/no-deferred'),
+    'no-delegate': require('./rules/no-delegate'),
     'no-each': require('./rules/no-each'),
     'no-find': require('./rules/no-find'),
     'no-global-eval': require('./rules/no-global-eval'),
