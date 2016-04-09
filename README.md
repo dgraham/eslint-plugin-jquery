@@ -44,6 +44,7 @@ Add `jquery` to the plugins section of your `.eslintrc` configuration file. You 
     "jquery/no-in-array": 2,
     "jquery/no-is": 2,
     "jquery/no-map": 2,
+    "jquery/no-merge": 2,
     "jquery/no-param": 2,
     "jquery/no-parent": 2,
     "jquery/no-parents": 2,

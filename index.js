@@ -18,6 +18,7 @@ module.exports = {
     'no-in-array': require('./rules/no-in-array'),
     'no-is': require('./rules/no-is'),
     'no-map': require('./rules/no-map'),
+    'no-merge': require('./rules/no-merge'),
     'no-param': require('./rules/no-param'),
     'no-parent': require('./rules/no-parent'),
     'no-parents': require('./rules/no-parents'),
