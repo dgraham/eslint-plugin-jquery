@@ -12,7 +12,7 @@
   "author": "David Graham",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/*.js"
+    "test": "mocha --reporter dot tests/"
   },
   "peerDependencies": {
     "eslint": ">=2.3.0"
