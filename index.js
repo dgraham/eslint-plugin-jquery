@@ -30,7 +30,7 @@ module.exports = {
     'no-trim': require('./rules/no-trim'),
     'no-val': require('./rules/no-val'),
     'no-wrap': require('./rules/no-wrap')
-  }
+  },
   configs: {
     deprecated: {
       "jquery/no-ajax": 2,
