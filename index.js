@@ -3,6 +3,7 @@
 module.exports = {
   rules: {
     'no-ajax': require('./rules/no-ajax'),
+    'no-animate': require('./rules/no-animate'),
     'no-attr': require('./rules/no-attr'),
     'no-bind': require('./rules/no-bind'),
     'no-class': require('./rules/no-class'),
@@ -42,6 +43,7 @@ module.exports = {
     deprecated: {
       rules: {
         "jquery/no-ajax": 2,
+        "jquery/no-animate": 2,
         "jquery/no-attr": 2,
         "jquery/no-bind": 2,
         "jquery/no-class": 2,
