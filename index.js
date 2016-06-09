@@ -85,6 +85,19 @@ module.exports = {
         "jquery/no-val": 2,
         "jquery/no-wrap": 2
       }
+    },
+    slim: {
+      rules: {
+        "jquery/no-ajax": 2,
+        "jquery/no-animate": 2,
+        "jquery/no-fade": 2,
+        "jquery/no-hide": 2,
+        "jquery/no-param": 2,
+        "jquery/no-serialize": 2,
+        "jquery/no-show": 2,
+        "jquery/no-slide": 2,
+        "jquery/no-toggle": 2
+      }
     }
   }
 }
