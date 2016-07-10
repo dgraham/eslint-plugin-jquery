@@ -3,7 +3,7 @@
 const rule = require('../rules/no-find')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.find is not allowed'
+const error = 'Prefer querySelectorAll to $.find'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-find', rule, {

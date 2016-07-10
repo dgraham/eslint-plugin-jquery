@@ -3,10 +3,10 @@
 const rule = require('../rules/no-class')
 const RuleTester = require('eslint').RuleTester
 
-const addError = '$.addClass is not allowed'
-const hasError = '$.hasClass is not allowed'
-const removeError = '$.removeClass is not allowed'
-const toggleError = '$.toggleClass is not allowed'
+const addError = 'Prefer classList to $.addClass'
+const hasError = 'Prefer classList to $.hasClass'
+const removeError = 'Prefer classList to $.removeClass'
+const toggleError = 'Prefer classList to $.toggleClass'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-class', rule, {

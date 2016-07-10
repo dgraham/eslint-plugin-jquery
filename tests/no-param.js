@@ -3,7 +3,7 @@
 const rule = require('../rules/no-param')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.param is not allowed'
+const error = 'Prefer FormData or URLSearchParams to $.param'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-param', rule, {

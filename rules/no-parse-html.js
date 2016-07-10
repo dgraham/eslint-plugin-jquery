@@ -9,7 +9,7 @@ module.exports = function(context) {
 
       context.report({
         node: node,
-        message: '$.parseHTML is not allowed'
+        message: 'Prefer createHTMLDocument to $.parseHTML'
       })
     }
   }

@@ -3,7 +3,7 @@
 const rule = require('../rules/no-each')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.each is not allowed'
+const error = 'Prefer Array#forEach to $.each'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-each', rule, {

@@ -9,7 +9,7 @@ module.exports = function(context) {
 
       context.report({
         node: node,
-        message: '$.proxy is not allowed'
+        message: 'Prefer Function#bind to $.proxy'
       })
     }
   }

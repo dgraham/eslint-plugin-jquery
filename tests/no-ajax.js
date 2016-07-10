@@ -3,11 +3,11 @@
 const rule = require('../rules/no-ajax')
 const RuleTester = require('eslint').RuleTester
 
-const ajaxError = '$.ajax is not allowed'
-const getError = '$.get is not allowed'
-const jsonError = '$.getJSON is not allowed'
-const scriptError = '$.getScript is not allowed'
-const postError = '$.post is not allowed'
+const ajaxError = 'Prefer fetch to $.ajax'
+const getError = 'Prefer fetch to $.get'
+const jsonError = 'Prefer fetch to $.getJSON'
+const scriptError = 'Prefer fetch to $.getScript'
+const postError = 'Prefer fetch to $.post'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-ajax', rule, {

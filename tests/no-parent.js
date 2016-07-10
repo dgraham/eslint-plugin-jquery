@@ -3,7 +3,7 @@
 const rule = require('../rules/no-parent')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.parent is not allowed'
+const error = 'Prefer parentElement to $.parent'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-parent', rule, {

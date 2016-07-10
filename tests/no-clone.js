@@ -3,7 +3,7 @@
 const rule = require('../rules/no-clone')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.clone is not allowed'
+const error = 'Prefer cloneNode to $.clone'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-clone', rule, {

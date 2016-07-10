@@ -3,7 +3,7 @@
 const rule = require('../rules/no-html')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.html is not allowed'
+const error = 'Prefer innerHTML to $.html'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-html', rule, {

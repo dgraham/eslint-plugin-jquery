@@ -9,7 +9,7 @@ module.exports = function(context) {
 
       context.report({
         node: node,
-        message: '$.merge is not allowed'
+        message: 'Prefer Array#concat to $.merge'
       })
     }
   }

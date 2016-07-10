@@ -3,7 +3,7 @@
 const rule = require('../rules/no-map')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.map is not allowed'
+const error = 'Prefer Array#map to $.map'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-map', rule, {

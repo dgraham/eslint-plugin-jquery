@@ -3,7 +3,7 @@
 const rule = require('../rules/no-text')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.text is not allowed'
+const error = 'Prefer textContent to $.text'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-text', rule, {

@@ -3,7 +3,7 @@
 const rule = require('../rules/no-delegate')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.delegate is not allowed'
+const error = 'Prefer addEventListener to $.delegate'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-delegate', rule, {

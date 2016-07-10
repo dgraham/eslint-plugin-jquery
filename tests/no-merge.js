@@ -3,7 +3,7 @@
 const rule = require('../rules/no-merge')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.merge is not allowed'
+const error = 'Prefer Array#concat to $.merge'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-merge', rule, {

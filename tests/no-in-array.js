@@ -3,7 +3,7 @@
 const rule = require('../rules/no-in-array')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.inArray is not allowed'
+const error = 'Prefer Array#indexOf to $.inArray'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-in-array', rule, {

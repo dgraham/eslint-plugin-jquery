@@ -3,7 +3,7 @@
 const rule = require('../rules/no-parse-html')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.parseHTML is not allowed'
+const error = 'Prefer createHTMLDocument to $.parseHTML'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-parse-html', rule, {

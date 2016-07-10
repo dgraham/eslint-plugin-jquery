@@ -3,7 +3,7 @@
 const rule = require('../rules/no-proxy')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.proxy is not allowed'
+const error = 'Prefer Function#bind to $.proxy'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-proxy', rule, {

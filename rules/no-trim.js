@@ -9,7 +9,7 @@ module.exports = function(context) {
 
       context.report({
         node: node,
-        message: '$.trim is not allowed'
+        message: 'Prefer String#trim to $.trim'
       })
     }
   }

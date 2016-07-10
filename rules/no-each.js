@@ -11,7 +11,7 @@ module.exports = function(context) {
       if (utils.isjQuery(node)) {
         context.report({
           node: node,
-          message: '$.each is not allowed'
+          message: 'Prefer Array#forEach to $.each'
         })
       }
     }

@@ -3,7 +3,7 @@
 const rule = require('../rules/no-is')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.is is not allowed'
+const error = 'Prefer matches to $.is'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-is', rule, {

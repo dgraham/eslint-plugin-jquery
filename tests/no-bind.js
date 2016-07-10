@@ -3,7 +3,7 @@
 const rule = require('../rules/no-bind')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.bind is not allowed'
+const error = 'Prefer addEventListener to $.bind'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-bind', rule, {

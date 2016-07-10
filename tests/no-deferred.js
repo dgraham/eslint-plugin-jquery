@@ -3,7 +3,7 @@
 const rule = require('../rules/no-deferred')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.Deferred is not allowed'
+const error = 'Prefer Promise to $.Deferred'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-deferred', rule, {

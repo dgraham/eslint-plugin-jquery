@@ -15,7 +15,7 @@ module.exports = function(context) {
         case 'post':
           context.report({
             node: node,
-            message: '$.' + name + ' is not allowed'
+            message: 'Prefer fetch to $.' + name
           })
       }
     }

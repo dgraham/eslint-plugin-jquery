@@ -3,7 +3,7 @@
 const rule = require('../rules/no-filter')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.filter is not allowed'
+const error = 'Prefer Array#filter to $.filter'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-filter', rule, {

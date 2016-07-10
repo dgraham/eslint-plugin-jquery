@@ -13,7 +13,7 @@ module.exports = function(context) {
       if (utils.isjQuery(node)) {
         context.report({
           node: node,
-          message: '$.' + node.callee.property.name + ' is not allowed'
+          message: 'Prefer FormData or URLSearchParams to $.' + node.callee.property.name
         })
       }
     }

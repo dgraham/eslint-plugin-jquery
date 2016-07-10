@@ -3,7 +3,7 @@
 const rule = require('../rules/no-attr')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.attr is not allowed'
+const error = 'Prefer getAttribute to $.attr'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-attr', rule, {

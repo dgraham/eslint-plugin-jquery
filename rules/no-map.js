@@ -11,7 +11,7 @@ module.exports = function(context) {
       if (utils.isjQuery(node)) {
         context.report({
           node: node,
-          message: '$.map is not allowed'
+          message: 'Prefer Array#map to $.map'
         })
       }
     }

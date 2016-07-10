@@ -9,7 +9,7 @@ module.exports = function(context) {
 
       context.report({
         node: node,
-        message: '$.Deferred is not allowed'
+        message: 'Prefer Promise to $.Deferred'
       })
     }
   }

@@ -3,7 +3,7 @@
 const rule = require('../rules/no-data')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.data is not allowed'
+const error = 'Prefer WeakMap to $.data'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-data', rule, {

@@ -3,7 +3,7 @@
 const rule = require('../rules/no-val')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.val is not allowed'
+const error = 'Prefer value to $.val'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-val', rule, {

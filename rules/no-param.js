@@ -9,7 +9,7 @@ module.exports = function(context) {
 
       context.report({
         node: node,
-        message: '$.param is not allowed'
+        message: 'Prefer FormData or URLSearchParams to $.param'
       })
     }
   }

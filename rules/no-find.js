@@ -11,7 +11,7 @@ module.exports = function(context) {
       if (utils.isjQuery(node)) {
         context.report({
           node: node,
-          message: '$.find is not allowed'
+          message: 'Prefer querySelectorAll to $.find'
         })
       }
     }

@@ -11,7 +11,7 @@ module.exports = function(context) {
       if (utils.isjQuery(node)) {
         context.report({
           node: node,
-          message: '$.trigger is not allowed'
+          message: 'Prefer dispatchEvent to $.trigger'
         })
       }
     }

@@ -3,8 +3,8 @@
 const rule = require('../rules/no-serialize')
 const RuleTester = require('eslint').RuleTester
 
-const serializeError = '$.serialize is not allowed'
-const arrayError = '$.serializeArray is not allowed'
+const serializeError = 'Prefer FormData or URLSearchParams to $.serialize'
+const arrayError = 'Prefer FormData or URLSearchParams to $.serializeArray'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-serialize', rule, {

@@ -11,7 +11,7 @@ module.exports = function(context) {
       if (utils.isjQuery(node)) {
         context.report({
           node: node,
-          message: '$.text is not allowed'
+          message: 'Prefer textContent to $.text'
         })
       }
     }

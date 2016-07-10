@@ -9,7 +9,7 @@ module.exports = function(context) {
 
       context.report({
         node: node,
-        message: '$.inArray is not allowed'
+        message: 'Prefer Array#indexOf to $.inArray'
       })
     }
   }

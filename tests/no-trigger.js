@@ -3,7 +3,7 @@
 const rule = require('../rules/no-trigger')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.trigger is not allowed'
+const error = 'Prefer dispatchEvent to $.trigger'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-trigger', rule, {

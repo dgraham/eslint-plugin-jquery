@@ -11,7 +11,7 @@ module.exports = function(context) {
       if (utils.isjQuery(node)) {
         context.report({
           node: node,
-          message: '$.clone is not allowed'
+          message: 'Prefer cloneNode to $.clone'
         })
       }
     }

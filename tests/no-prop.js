@@ -3,7 +3,7 @@
 const rule = require('../rules/no-prop')
 const RuleTester = require('eslint').RuleTester
 
-const error = '$.prop is not allowed'
+const error = 'Prefer direct property access to $.prop'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-prop', rule, {
