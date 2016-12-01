@@ -62,6 +62,7 @@ Add `jquery` to the plugins section of your `.eslintrc` configuration file. You 
     "jquery/no-size": 2,
     "jquery/no-sizzle": 2,
     "jquery/no-slide": 2,
+    "jquery/no-submit": 2,
     "jquery/no-text": 2,
     "jquery/no-toggle": 2,
     "jquery/no-trigger": 2,
