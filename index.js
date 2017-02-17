@@ -42,6 +42,7 @@ module.exports = {
     'no-trigger': require('./rules/no-trigger'),
     'no-trim': require('./rules/no-trim'),
     'no-val': require('./rules/no-val'),
+    'no-when': require('./rules/no-when'),
     'no-wrap': require('./rules/no-wrap')
   },
   configs: {
@@ -87,6 +88,7 @@ module.exports = {
         "jquery/no-trigger": 2,
         "jquery/no-trim": 2,
         "jquery/no-val": 2,
+        "jquery/no-when": 2,
         "jquery/no-wrap": 2
       }
     },
