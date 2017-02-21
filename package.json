@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-jquery",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Disallow jQuery functions with native equivalents.",
   "repository": "dgraham/eslint-plugin-jquery",
   "license": "MIT",
