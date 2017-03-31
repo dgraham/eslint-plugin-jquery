@@ -57,6 +57,7 @@ Add `jquery` to the plugins section of your `.eslintrc` configuration file. You 
     "jquery/no-parse-html": 2,
     "jquery/no-prop": 2,
     "jquery/no-proxy": 2,
+    "jquery/no-ready": 2,
     "jquery/no-serialize": 2,
     "jquery/no-show": 2,
     "jquery/no-size": 2,
