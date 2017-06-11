@@ -6,13 +6,16 @@ module.exports = function(context) {
   return {
     CallExpression: function(node) {
       if (node.callee.type !== 'MemberExpression') return
-      if (node.callee.property.name !== 'data') return
+      if (!utils.isjQuery(node)) return
 
-      if (utils.isjQuery(node)) {
-        context.report({
-          node: node,
-          message: 'Prefer WeakMap to $.data'
-        })
+      const name = node.callee.property.name
+      switch (name) {
+        case 'data':
+        case 'removeData':
+          context.report({
+            node: node,
+            message: 'Prefer WeakMap to $.' + name
+          })
       }
     }
   }
