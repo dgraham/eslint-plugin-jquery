@@ -12,6 +12,7 @@
   "author": "David Graham",
   "main": "index.js",
   "scripts": {
+    "pretest": "eslint .",
     "test": "mocha --reporter dot tests/"
   },
   "peerDependencies": {
