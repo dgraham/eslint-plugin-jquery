@@ -7,12 +7,7 @@ const error = 'Prefer querySelectorAll to $.find'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-find', rule, {
-  valid: [
-    'find()',
-    '[].find()',
-    'div.find()',
-    'div.find'
-  ],
+  valid: ['find()', '[].find()', 'div.find()', 'div.find'],
   invalid: [
     {
       code: '$("div").find()',

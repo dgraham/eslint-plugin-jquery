@@ -13,7 +13,9 @@ module.exports = function(context) {
       if (utils.isjQuery(node)) {
         context.report({
           node: node,
-          message: 'Prefer FormData or URLSearchParams to $.' + node.callee.property.name
+          message:
+            'Prefer FormData or URLSearchParams to $.' +
+            node.callee.property.name
         })
       }
     }

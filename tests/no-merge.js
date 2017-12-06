@@ -7,11 +7,7 @@ const error = 'Prefer Array#concat to $.merge'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-merge', rule, {
-  valid: [
-    'merge()',
-    '"test".merge()',
-    '"test".merge'
-  ],
+  valid: ['merge()', '"test".merge()', '"test".merge'],
   invalid: [
     {
       code: '$.merge()',

@@ -7,11 +7,7 @@ const error = 'Prefer Function#bind to $.proxy'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-proxy', rule, {
-  valid: [
-    'proxy()',
-    '"test".proxy()',
-    '"test".proxy'
-  ],
+  valid: ['proxy()', '"test".proxy()', '"test".proxy'],
   invalid: [
     {
       code: '$.proxy()',

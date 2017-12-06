@@ -7,11 +7,7 @@ const error = 'Prefer String#trim to $.trim'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-trim', rule, {
-  valid: [
-    'trim()',
-    '"test".trim()',
-    '"test".trim'
-  ],
+  valid: ['trim()', '"test".trim()', '"test".trim'],
   invalid: [
     {
       code: '$.trim()',

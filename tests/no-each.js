@@ -7,12 +7,7 @@ const error = 'Prefer Array#forEach to $.each'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-each', rule, {
-  valid: [
-    'each()',
-    '[].each()',
-    'div.each()',
-    'div.each'
-  ],
+  valid: ['each()', '[].each()', 'div.each()', 'div.each'],
   invalid: [
     {
       code: '$.each()',

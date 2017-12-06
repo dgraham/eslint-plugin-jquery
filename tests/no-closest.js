@@ -7,12 +7,7 @@ const error = 'Prefer closest to $.closest'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-closest', rule, {
-  valid: [
-    'closest()',
-    '[].closest()',
-    'div.closest()',
-    'div.closest'
-  ],
+  valid: ['closest()', '[].closest()', 'div.closest()', 'div.closest'],
   invalid: [
     {
       code: '$("div").closest()',

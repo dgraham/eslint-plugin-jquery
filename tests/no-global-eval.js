@@ -7,11 +7,7 @@ const error = '$.globalEval is not allowed'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-global-eval', rule, {
-  valid: [
-    'globalEval()',
-    '"test".globalEval()',
-    '"test".globalEval'
-  ],
+  valid: ['globalEval()', '"test".globalEval()', '"test".globalEval'],
   invalid: [
     {
       code: '$.globalEval()',

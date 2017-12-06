@@ -7,12 +7,7 @@ const error = '$.has is not allowed'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-has', rule, {
-  valid: [
-    'has()',
-    '[].has()',
-    'div.has()',
-    'div.has'
-  ],
+  valid: ['has()', '[].has()', 'div.has()', 'div.has'],
   invalid: [
     {
       code: '$("div").has()',

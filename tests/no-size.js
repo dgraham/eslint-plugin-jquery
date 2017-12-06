@@ -7,12 +7,7 @@ const error = 'Prefer length to $.size'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-size', rule, {
-  valid: [
-    'size()',
-    '[].size()',
-    'div.size()',
-    'div.size'
-  ],
+  valid: ['size()', '[].size()', 'div.size()', 'div.size'],
   invalid: [
     {
       code: '$("div").size()',

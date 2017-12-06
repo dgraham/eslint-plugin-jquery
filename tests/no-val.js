@@ -7,12 +7,7 @@ const error = 'Prefer value to $.val'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-val', rule, {
-  valid: [
-    'val()',
-    '[].val()',
-    'div.val()',
-    'div.val'
-  ],
+  valid: ['val()', '[].val()', 'div.val()', 'div.val'],
   invalid: [
     {
       code: '$("div").val()',

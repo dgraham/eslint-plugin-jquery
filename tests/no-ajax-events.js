@@ -15,45 +15,57 @@ ruleTester.run('no-ajax-events', rule, {
   invalid: [
     {
       code: '$(document).on("ajaxSend", function(e){ })',
-      errors: [{
-        message: 'Prefer remoteForm to ajaxSend',
-        type: 'CallExpression'
-      }]
+      errors: [
+        {
+          message: 'Prefer remoteForm to ajaxSend',
+          type: 'CallExpression'
+        }
+      ]
     },
     {
       code: '$(document).on("ajaxSuccess", function(e){ })',
-      errors: [{
-        message: 'Prefer remoteForm to ajaxSuccess',
-        type: 'CallExpression'
-      }]
+      errors: [
+        {
+          message: 'Prefer remoteForm to ajaxSuccess',
+          type: 'CallExpression'
+        }
+      ]
     },
     {
       code: '$form.on("ajaxError", function(e){ })',
-      errors: [{
-        message: 'Prefer remoteForm to ajaxError',
-        type: 'CallExpression'
-      }]
+      errors: [
+        {
+          message: 'Prefer remoteForm to ajaxError',
+          type: 'CallExpression'
+        }
+      ]
     },
     {
       code: '$form.on("ajaxComplete", function(e){ })',
-      errors: [{
-        message: 'Prefer remoteForm to ajaxComplete',
-        type: 'CallExpression'
-      }]
+      errors: [
+        {
+          message: 'Prefer remoteForm to ajaxComplete',
+          type: 'CallExpression'
+        }
+      ]
     },
     {
       code: '$form.on("ajaxStart", function(e){ })',
-      errors: [{
-        message: 'Prefer remoteForm to ajaxStart',
-        type: 'CallExpression'
-      }]
+      errors: [
+        {
+          message: 'Prefer remoteForm to ajaxStart',
+          type: 'CallExpression'
+        }
+      ]
     },
     {
       code: '$form.on("ajaxStop", function(e){ })',
-      errors: [{
-        message: 'Prefer remoteForm to ajaxStop',
-        type: 'CallExpression'
-      }]
+      errors: [
+        {
+          message: 'Prefer remoteForm to ajaxStop',
+          type: 'CallExpression'
+        }
+      ]
     }
   ]
 })

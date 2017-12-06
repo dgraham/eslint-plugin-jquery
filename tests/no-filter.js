@@ -7,12 +7,7 @@ const error = 'Prefer Array#filter to $.filter'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-filter', rule, {
-  valid: [
-    'filter()',
-    '[].filter()',
-    'div.filter()',
-    'div.filter'
-  ],
+  valid: ['filter()', '[].filter()', 'div.filter()', 'div.filter'],
   invalid: [
     {
       code: '$("div").filter()',

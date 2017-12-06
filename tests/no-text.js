@@ -7,12 +7,7 @@ const error = 'Prefer textContent to $.text'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-text', rule, {
-  valid: [
-    'text()',
-    '[].text()',
-    'div.text()',
-    'div.text'
-  ],
+  valid: ['text()', '[].text()', 'div.text()', 'div.text'],
   invalid: [
     {
       code: '$("div").text()',

@@ -7,12 +7,7 @@ const error = 'Prefer innerHTML to $.html'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-html', rule, {
-  valid: [
-    'html()',
-    '[].html()',
-    'div.html()',
-    'div.html'
-  ],
+  valid: ['html()', '[].html()', 'div.html()', 'div.html'],
   invalid: [
     {
       code: '$("div").html()',

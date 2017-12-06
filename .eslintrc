@@ -1,15 +1,18 @@
-{ "extends": "eslint:recommended",
+{
+  "extends": "eslint:recommended",
   "env": {
     "node": true,
-    "es6": true,
+    "es6": true
   },
+  "plugins": ["prettier"],
   "rules": {
+    "prettier/prettier": "error",
+    "camelcase": "error",
     "eqeqeq": ["error", "smart"],
-    "no-extra-parens": "error",
     "no-implicit-globals": "error",
-    "no-trailing-spaces": "error",
     "no-unused-expressions": "error",
-    "semi": ["error", "never"],
+    "no-var": "error",
+    "prefer-const": "error",
     "strict": "error"
   }
 }

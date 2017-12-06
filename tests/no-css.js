@@ -7,12 +7,7 @@ const error = 'Prefer getComputedStyle to $.css'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-css', rule, {
-  valid: [
-    'css()',
-    '[].css()',
-    'div.css()',
-    'div.css'
-  ],
+  valid: ['css()', '[].css()', 'div.css()', 'div.css'],
   invalid: [
     {
       code: '$("div").css()',

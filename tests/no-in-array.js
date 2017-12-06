@@ -7,11 +7,7 @@ const error = 'Prefer Array#indexOf to $.inArray'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-in-array', rule, {
-  valid: [
-    'inArray()',
-    '"test".inArray()',
-    '"test".inArray'
-  ],
+  valid: ['inArray()', '"test".inArray()', '"test".inArray'],
   invalid: [
     {
       code: '$.inArray()',

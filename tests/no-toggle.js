@@ -7,12 +7,7 @@ const error = '$.toggle is not allowed'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-toggle', rule, {
-  valid: [
-    'toggle()',
-    '[].toggle()',
-    'div.toggle()',
-    'div.toggle'
-  ],
+  valid: ['toggle()', '[].toggle()', 'div.toggle()', 'div.toggle'],
   invalid: [
     {
       code: '$("div").toggle()',

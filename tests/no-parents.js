@@ -7,12 +7,7 @@ const error = 'Prefer closest to $.parents'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-parents', rule, {
-  valid: [
-    'parents()',
-    '[].parents()',
-    'div.parents()',
-    'div.parents'
-  ],
+  valid: ['parents()', '[].parents()', 'div.parents()', 'div.parents'],
   invalid: [
     {
       code: '$("div").parents()',

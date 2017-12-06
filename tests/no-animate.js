@@ -7,12 +7,7 @@ const error = '$.animate is not allowed'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-animate', rule, {
-  valid: [
-    'animate()',
-    '[].animate()',
-    'div.animate()',
-    'div.animate'
-  ],
+  valid: ['animate()', '[].animate()', 'div.animate()', 'div.animate'],
   invalid: [
     {
       code: '$("div").animate()',

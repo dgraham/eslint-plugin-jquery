@@ -7,12 +7,7 @@ const error = 'Prefer getAttribute to $.attr'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-attr', rule, {
-  valid: [
-    'attr()',
-    '[].attr()',
-    'div.attr()',
-    'div.attr'
-  ],
+  valid: ['attr()', '[].attr()', 'div.attr()', 'div.attr'],
   invalid: [
     {
       code: '$("div").attr()',

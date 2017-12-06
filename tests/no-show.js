@@ -7,12 +7,7 @@ const error = '$.show is not allowed'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-show', rule, {
-  valid: [
-    'show()',
-    '[].show()',
-    'div.show()',
-    'div.show'
-  ],
+  valid: ['show()', '[].show()', 'div.show()', 'div.show'],
   invalid: [
     {
       code: '$("div").show()',
