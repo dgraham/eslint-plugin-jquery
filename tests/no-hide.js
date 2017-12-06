@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const rule = require('../rules/no-hide')
 const RuleTester = require('eslint').RuleTester

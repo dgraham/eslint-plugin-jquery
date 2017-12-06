@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 function traverse(node) {
   while (node) {
