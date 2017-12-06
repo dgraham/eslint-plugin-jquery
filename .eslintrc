@@ -1,0 +1,15 @@
+{ "extends": "eslint:recommended",
+  "env": {
+    "node": true,
+    "es6": true,
+  },
+  "rules": {
+    "eqeqeq": ["error", "smart"],
+    "no-extra-parens": "error",
+    "no-implicit-globals": "error",
+    "no-trailing-spaces": "error",
+    "no-unused-expressions": "error",
+    "semi": ["error", "never"],
+    "strict": "error"
+  }
+}

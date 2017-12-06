@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const rule = require('../rules/no-in-array')
 const RuleTester = require('eslint').RuleTester

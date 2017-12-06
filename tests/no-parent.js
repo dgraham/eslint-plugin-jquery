@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const rule = require('../rules/no-parent')
 const RuleTester = require('eslint').RuleTester

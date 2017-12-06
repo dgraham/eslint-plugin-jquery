@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const rule = require('../rules/no-merge')
 const RuleTester = require('eslint').RuleTester
