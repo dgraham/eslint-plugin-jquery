@@ -17,6 +17,10 @@ ruleTester.run('no-deferred', rule, {
     {
       code: '$.Deferred()',
       errors: [{message: error, type: 'CallExpression'}]
+    },
+    {
+      code: 'new $.Deferred()',
+      errors: [{message: error, type: 'NewExpression'}]
     }
   ]
 })
