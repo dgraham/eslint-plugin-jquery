@@ -3,7 +3,8 @@
 const rule = require('../rules/no-attr')
 const RuleTester = require('eslint').RuleTester
 
-const error = 'Prefer getAttribute to $.attr'
+const getError = 'Prefer getAttribute to $.attr'
+const setError = 'Prefer setAttribute to $.attr'
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-attr', rule, {
@@ -11,19 +12,27 @@ ruleTester.run('no-attr', rule, {
   invalid: [
     {
       code: '$("div").attr()',
-      errors: [{message: error, type: 'CallExpression'}]
+      errors: [{message: getError, type: 'CallExpression'}]
     },
     {
       code: '$div.attr()',
-      errors: [{message: error, type: 'CallExpression'}]
+      errors: [{message: getError, type: 'CallExpression'}]
     },
     {
       code: '$("div").first().attr()',
-      errors: [{message: error, type: 'CallExpression'}]
+      errors: [{message: getError, type: 'CallExpression'}]
     },
     {
       code: '$("div").append($("input").attr())',
-      errors: [{message: error, type: 'CallExpression'}]
+      errors: [{message: getError, type: 'CallExpression'}]
+    },
+    {
+      code: '$("div").attr("name")',
+      errors: [{message: getError, type: 'CallExpression'}]
+    },
+    {
+      code: '$("div").attr("name", "random")',
+      errors: [{message: setError, type: 'CallExpression'}]
     }
   ]
 })
