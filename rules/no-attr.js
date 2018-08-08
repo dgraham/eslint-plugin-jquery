@@ -9,9 +9,10 @@ module.exports = function(context) {
       if (node.callee.property.name !== 'attr') return
 
       if (utils.isjQuery(node)) {
+        const getOrSet = node.arguments.length === 2 ? 'set' : 'get'
         context.report({
           node: node,
-          message: 'Prefer getAttribute to $.attr'
+          message: `Prefer ${getOrSet}Attribute to $.attr`
         })
       }
     }
