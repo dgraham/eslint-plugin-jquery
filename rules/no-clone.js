@@ -2,20 +2,25 @@
 
 const utils = require('./utils.js')
 
-module.exports = function(context) {
-  return {
-    CallExpression: function(node) {
-      if (node.callee.type !== 'MemberExpression') return
-      if (node.callee.property.name !== 'clone') return
+module.exports = {
+  meta: {
+    docs: {},
+    schema: []
+  },
 
-      if (utils.isjQuery(node)) {
-        context.report({
-          node: node,
-          message: 'Prefer cloneNode to $.clone'
-        })
+  create: function(context) {
+    return {
+      CallExpression: function(node) {
+        if (node.callee.type !== 'MemberExpression') return
+        if (node.callee.property.name !== 'clone') return
+
+        if (utils.isjQuery(node)) {
+          context.report({
+            node: node,
+            message: 'Prefer cloneNode to $.clone'
+          })
+        }
       }
     }
   }
 }
-
-module.exports.schema = []

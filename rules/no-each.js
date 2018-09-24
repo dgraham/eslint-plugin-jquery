@@ -2,20 +2,25 @@
 
 const utils = require('./utils.js')
 
-module.exports = function(context) {
-  return {
-    CallExpression: function(node) {
-      if (node.callee.type !== 'MemberExpression') return
-      if (node.callee.property.name !== 'each') return
+module.exports = {
+  meta: {
+    docs: {},
+    schema: []
+  },
 
-      if (utils.isjQuery(node)) {
-        context.report({
-          node: node,
-          message: 'Prefer Array#forEach to $.each'
-        })
+  create: function(context) {
+    return {
+      CallExpression: function(node) {
+        if (node.callee.type !== 'MemberExpression') return
+        if (node.callee.property.name !== 'each') return
+
+        if (utils.isjQuery(node)) {
+          context.report({
+            node: node,
+            message: 'Prefer Array#forEach to $.each'
+          })
+        }
       }
     }
   }
 }
-
-module.exports.schema = []

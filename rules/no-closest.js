@@ -2,20 +2,25 @@
 
 const utils = require('./utils.js')
 
-module.exports = function(context) {
-  return {
-    CallExpression: function(node) {
-      if (node.callee.type !== 'MemberExpression') return
-      if (node.callee.property.name !== 'closest') return
+module.exports = {
+  meta: {
+    docs: {},
+    schema: []
+  },
 
-      if (utils.isjQuery(node)) {
-        context.report({
-          node: node,
-          message: 'Prefer closest to $.closest'
-        })
+  create: function(context) {
+    return {
+      CallExpression: function(node) {
+        if (node.callee.type !== 'MemberExpression') return
+        if (node.callee.property.name !== 'closest') return
+
+        if (utils.isjQuery(node)) {
+          context.report({
+            node: node,
+            message: 'Prefer closest to $.closest'
+          })
+        }
       }
     }
   }
 }
-
-module.exports.schema = []

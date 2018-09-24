@@ -2,20 +2,25 @@
 
 const utils = require('./utils.js')
 
-module.exports = function(context) {
-  return {
-    CallExpression: function(node) {
-      if (node.callee.type !== 'MemberExpression') return
-      if (node.callee.property.name !== 'has') return
+module.exports = {
+  meta: {
+    docs: {},
+    schema: []
+  },
 
-      if (utils.isjQuery(node)) {
-        context.report({
-          node: node,
-          message: '$.has is not allowed'
-        })
+  create: function(context) {
+    return {
+      CallExpression: function(node) {
+        if (node.callee.type !== 'MemberExpression') return
+        if (node.callee.property.name !== 'has') return
+
+        if (utils.isjQuery(node)) {
+          context.report({
+            node: node,
+            message: '$.has is not allowed'
+          })
+        }
       }
     }
   }
 }
-
-module.exports.schema = []
