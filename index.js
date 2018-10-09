@@ -18,6 +18,7 @@ module.exports = {
     'no-fade': require('./rules/no-fade'),
     'no-filter': require('./rules/no-filter'),
     'no-find': require('./rules/no-find'),
+    'no-function': require('./rules/no-function'),
     'no-global-eval': require('./rules/no-global-eval'),
     'no-has': require('./rules/no-has'),
     'no-hide': require('./rules/no-hide'),
