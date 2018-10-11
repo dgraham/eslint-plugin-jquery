@@ -15,6 +15,7 @@ module.exports = {
     'no-deferred': require('./rules/no-deferred'),
     'no-delegate': require('./rules/no-delegate'),
     'no-each': require('./rules/no-each'),
+    'no-extend': require('./rules/no-extend'),
     'no-fade': require('./rules/no-fade'),
     'no-filter': require('./rules/no-filter'),
     'no-find': require('./rules/no-find'),
