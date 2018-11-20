@@ -1,6 +1,6 @@
 'use strict'
 
-const rule = require('../rules/no-function')
+const rule = require('../rules/no-is-function')
 const RuleTester = require('eslint').RuleTester
 
 const error = 'Prefer typeof to $.isFunction'
