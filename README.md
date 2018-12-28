@@ -50,6 +50,7 @@ Add `jquery` to the plugins section of your `.eslintrc` configuration file. You 
     "jquery/no-hide": 2,
     "jquery/no-html": 2,
     "jquery/no-in-array": 2,
+    "jquery/no-is-array": 2,
     "jquery/no-is": 2,
     "jquery/no-load": 2,
     "jquery/no-map": 2,
