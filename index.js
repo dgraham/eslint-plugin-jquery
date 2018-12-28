@@ -69,6 +69,7 @@ module.exports = {
         'jquery/no-filter': 2,
         'jquery/no-find': 2,
         'jquery/no-global-eval': 2,
+        'jquery/no-grep': 2,
         'jquery/no-has': 2,
         'jquery/no-hide': 2,
         'jquery/no-html': 2,
