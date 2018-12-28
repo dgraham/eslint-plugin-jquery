@@ -24,6 +24,7 @@ module.exports = {
     'no-hide': require('./rules/no-hide'),
     'no-html': require('./rules/no-html'),
     'no-in-array': require('./rules/no-in-array'),
+    'no-is-array': require('./rules/no-is-array'),
     'no-is': require('./rules/no-is'),
     'no-load': require('./rules/no-load'),
     'no-map': require('./rules/no-map'),
