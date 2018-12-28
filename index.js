@@ -68,6 +68,7 @@ module.exports = {
         'jquery/no-deferred': 2,
         'jquery/no-delegate': 2,
         'jquery/no-each': 2,
+        'jquery/no-extend': 2,
         'jquery/no-fade': 2,
         'jquery/no-filter': 2,
         'jquery/no-find': 2,
