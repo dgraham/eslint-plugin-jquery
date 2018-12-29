@@ -21,17 +21,22 @@ function isChained(node) {
   )
 }
 
-module.exports = function(context) {
-  return {
-    CallExpression: function(node) {
-      if (isDirect(node) || isChained(node)) {
-        context.report({
-          node: node,
-          message: '$.ready is not allowed'
-        })
+module.exports = {
+  meta: {
+    docs: {},
+    schema: []
+  },
+
+  create: function(context) {
+    return {
+      CallExpression: function(node) {
+        if (isDirect(node) || isChained(node)) {
+          context.report({
+            node: node,
+            message: '$.ready is not allowed'
+          })
+        }
       }
     }
   }
 }
-
-module.exports.schema = []

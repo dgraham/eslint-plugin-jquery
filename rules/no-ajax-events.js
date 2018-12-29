@@ -15,28 +15,33 @@ const disallowedEvents = {
 const MemberExpression = 'MemberExpression'
 const Literal = 'Literal'
 
-module.exports = function(context) {
-  return {
-    CallExpression: function(node) {
-      if (
-        node.callee.type === MemberExpression &&
-        node.callee.property.name === methodName &&
-        node.arguments.length >= 1
-      ) {
-        const arg = node.arguments[0]
+module.exports = {
+  meta: {
+    docs: {},
+    schema: []
+  },
+
+  create: function(context) {
+    return {
+      CallExpression: function(node) {
         if (
-          arg.type === Literal &&
-          arg.value in disallowedEvents &&
-          utils.isjQuery(node)
+          node.callee.type === MemberExpression &&
+          node.callee.property.name === methodName &&
+          node.arguments.length >= 1
         ) {
-          context.report({
-            node: node,
-            message: `Prefer remoteForm to ${arg.value}`
-          })
+          const arg = node.arguments[0]
+          if (
+            arg.type === Literal &&
+            arg.value in disallowedEvents &&
+            utils.isjQuery(node)
+          ) {
+            context.report({
+              node: node,
+              message: `Prefer remoteForm to ${arg.value}`
+            })
+          }
         }
       }
     }
   }
 }
-
-module.exports.schema = []

@@ -1,21 +1,26 @@
 'use strict'
 
-module.exports = function(context) {
-  function enforce(node) {
-    if (node.callee.type !== 'MemberExpression') return
-    if (node.callee.object.name !== '$') return
-    if (node.callee.property.name !== 'Deferred') return
+module.exports = {
+  meta: {
+    docs: {},
+    schema: []
+  },
 
-    context.report({
-      node: node,
-      message: 'Prefer Promise to $.Deferred'
-    })
-  }
+  create: function(context) {
+    function enforce(node) {
+      if (node.callee.type !== 'MemberExpression') return
+      if (node.callee.object.name !== '$') return
+      if (node.callee.property.name !== 'Deferred') return
 
-  return {
-    CallExpression: enforce,
-    NewExpression: enforce
+      context.report({
+        node: node,
+        message: 'Prefer Promise to $.Deferred'
+      })
+    }
+
+    return {
+      CallExpression: enforce,
+      NewExpression: enforce
+    }
   }
 }
-
-module.exports.schema = []
