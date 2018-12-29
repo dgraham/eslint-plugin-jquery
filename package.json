@@ -19,9 +19,9 @@
     "eslint": ">=5.4.0"
   },
   "devDependencies": {
-    "eslint": "^5.4.0",
-    "eslint-plugin-prettier": "^2.6.2",
+    "eslint": "^5.11.1",
+    "eslint-plugin-prettier": "^3.0.1",
     "mocha": "^5.2.0",
-    "prettier": "^1.14.2"
+    "prettier": "^1.15.3"
   }
 }
