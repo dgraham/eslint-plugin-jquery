@@ -1,18 +1,23 @@
 'use strict'
 
-module.exports = function(context) {
-  return {
-    CallExpression: function(node) {
-      if (node.callee.type !== 'MemberExpression') return
-      if (node.callee.object.name !== '$') return
-      if (node.callee.property.name !== 'extend') return
+module.exports = {
+  meta: {
+    docs: {},
+    schema: []
+  },
 
-      context.report({
-        node: node,
-        message: 'Prefer Object#assign or the spread operator to $.extend'
-      })
+  create: function(context) {
+    return {
+      CallExpression: function(node) {
+        if (node.callee.type !== 'MemberExpression') return
+        if (node.callee.object.name !== '$') return
+        if (node.callee.property.name !== 'extend') return
+
+        context.report({
+          node: node,
+          message: 'Prefer Object#assign or the spread operator to $.extend'
+        })
+      }
     }
   }
 }
-
-module.exports.schema = []
