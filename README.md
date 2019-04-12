@@ -20,8 +20,9 @@ $ npm install eslint-plugin-jquery --save-dev
 
 ## Usage
 
-Add `jquery` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `jquery` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix.
 
+You can either enable individual rules as follows:
 ```json
 {
   "plugins": [
@@ -80,6 +81,32 @@ Add `jquery` to the plugins section of your `.eslintrc` configuration file. You 
   }
 }
 ```
+
+Or you can use the full set of rules:
+```json
+{
+  "plugins": [
+    "jquery"
+  ],
+  "extends": [
+    "plugin:jquery/deprecated"
+  ]
+}
+```
+
+Or a subset:
+```json
+{
+  "plugins": [
+    "jquery"
+  ],
+  "extends": [
+    "plugin:jquery/slim"
+  ]
+}
+```
+The `slim` set uses the following rules: `jquery/no-ajax`, `jquery/no-animate`, `jquery/no-fade`, `jquery/no-hide`, `jquery/no-load`, `jquery/no-param`, `jquery/no-serialize`, `jquery/no-show`, `jquery/no-slide`, `jquery/no-toggle`.
+
 
 ## Development
 
