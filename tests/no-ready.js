@@ -5,10 +5,11 @@ const RuleTester = require('eslint').RuleTester
 
 const error = '$.ready is not allowed'
 
-const ruleTester = new RuleTester()
+const ruleTester = new RuleTester({parserOptions: {ecmaVersion: 6}})
 ruleTester.run('no-ready', rule, {
   valid: [
     'ready(function() { })',
+    'ready(() => { })',
     'ready()',
     '[].ready()',
     'div.ready()',
@@ -23,11 +24,19 @@ ruleTester.run('no-ready', rule, {
       errors: [{message: error, type: 'CallExpression'}]
     },
     {
+      code: '$(() => { })',
+      errors: [{message: error, type: 'CallExpression'}]
+    },
+    {
       code: '$(function init() { })',
       errors: [{message: error, type: 'CallExpression'}]
     },
     {
       code: '$(document).ready(function() { })',
+      errors: [{message: error, type: 'CallExpression'}]
+    },
+    {
+      code: '$(document).ready(() => { })',
       errors: [{message: error, type: 'CallExpression'}]
     },
     {
