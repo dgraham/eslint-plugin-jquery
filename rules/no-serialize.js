@@ -8,11 +8,11 @@ module.exports = {
     schema: []
   },
 
-  create: function(context) {
+  create: function (context) {
     const forbidden = ['serialize', 'serializeArray']
 
     return {
-      CallExpression: function(node) {
+      CallExpression: function (node) {
         if (node.callee.type !== 'MemberExpression') return
         if (forbidden.indexOf(node.callee.property.name) === -1) return
 

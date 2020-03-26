@@ -28,9 +28,9 @@ module.exports = {
     schema: []
   },
 
-  create: function(context) {
+  create: function (context) {
     return {
-      CallExpression: function(node) {
+      CallExpression: function (node) {
         if (isDirect(node) || isChained(node)) {
           context.report({
             node: node,

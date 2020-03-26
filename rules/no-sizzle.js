@@ -8,7 +8,7 @@ module.exports = {
     schema: []
   },
 
-  create: function(context) {
+  create: function (context) {
     const forbidden = /:animated|:button|:checkbox|:eq|:even|:file|:first([^-]|$)|:gt|:has|:header|:hidden|:image|:input|:last([^-]|$)|:lt|:odd|:parent|:password|:radio|:reset|:selected|:submit|:text|:visible/
     const traversals = [
       'children',
@@ -31,7 +31,7 @@ module.exports = {
     ]
 
     return {
-      CallExpression: function(node) {
+      CallExpression: function (node) {
         if (!node.arguments[0]) return
         if (!utils.isjQuery(node)) return
         if (
